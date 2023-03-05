@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/id"
+        android:layout_width="25dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="6dp"
+        android:padding="3dp"
+        android:visibility="invisible" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="Task:"
+            android:maxLines="1"
+            android:padding="4dp"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#272727"/>
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="list to do"
+            android:maxLines="2"
+            android:padding="4dp"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="Date:"
+            android:maxLines="2"
+            android:padding="4dp"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#272727"/>
+
+        <TextView
+            android:id="@+id/desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:ellipsize="end"
+            android:text="31/01/2023"
+            android:maxLines="2"
+            android:padding="4dp"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:visibility="visible"
+            android:layout_marginStart="10dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="urgency:"
+            android:maxLines="1"
+            android:padding="4dp"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#272727"/>
+
+        <TextView
+            android:id="@+id/emergency"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:padding="4dp"
+            android:visibility="visible" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="Status:"
+            android:maxLines="1"
+            android:padding="4dp"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#272727"/>
+
+        <TextView
+            android:id="@+id/todoCheckBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:padding="4dp"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:visibility="visible"
+            android:layout_marginStart="10dp" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,108 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/image"
+    android:padding="10dp">
+
+    <EditText
+        android:id="@+id/title_task"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/enter_task" >
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/date_to_perform"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/date" >
+    </EditText>
+
+    <EditText
+        android:id="@+id/check_task_done"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:visibility="invisible">
+    </EditText>
+
+    <EditText
+        android:id="@+id/check_urgent"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:visibility="invisible">
+    </EditText>
+
+
+    <RadioGroup
+        android:id="@+id/urgencyRadio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/normal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:text="@string/normal"
+            android:checked="true"/>
+
+        <RadioButton
+            android:id="@+id/urgent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/urgent" />
+
+    </RadioGroup>
+
+    <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/progressRadio"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal">
+
+        <RadioButton android:id="@+id/in_progress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:text="@string/in_progress"
+            android:checked="true"/>
+
+        <RadioButton android:id="@+id/tasks_done"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/task_done"/>
+    </RadioGroup>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/add_task"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:backgroundTint="@color/purple_200"
+            android:text="@string/add_task" />
+
+        <Button
+            android:id="@+id/cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:backgroundTint="@color/purple_200"
+            android:text="@string/cancel" />
+
+    </LinearLayout>
+
+
+</LinearLayout>
